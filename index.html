@@ -1,7 +1,101 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171593765-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-171593765-1');
+	</script>
+
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Benjamin Wittenbrink - Home</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="all,follow">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- theme stylesheet-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel = "stylesheet">
+	<link rel="stylesheet" href="assets/css/defaultstyle.css" id="theme-stylesheet">
+	<!-- Custom stylesheet - for your changes-->
+	<link rel="stylesheet" href="assets/css/custom.css"> 
+
+	<!-- Favicon --> 
+	<link rel="shortcut icon" href="assets/images/gh_favicon.ico">
+</head>
+
+<body id='main-body'>
+
+	
+	<div id='wrapper' class='d-flex'>
+
+		<!-- Sidebar --> 
+		<div id="sidebar-wrapper" class="col-lg-4 col-md-4 col-sm-6">
+			<div id='logo' class="text-center">
+				<img src="assets/images/stanford.png" class="img-thumbnail w-50">
+			</div>
+			<ul class="sidebar-menu list-unstyled top-sidebar-menu">
+				<li class="sidebar-list-item"><a href="index.html" class="sidebar-link text-muted active text-uppercase"><i class="o-home-1 mr-3 text-gray"></i><span>Home</span></a></li>
+				<li class="sidebar-list-item"><a href="projects.html" class="sidebar-link text-muted text-uppercase"><i class="o-sales-up-1 mr-3 text-gray"></i><span>Projects</span></a></li>
+			</ul>
+			<hr>
+			<ul class = "sidebar-menu list-unstyled">
+				<li class = "sidebar-list-item"><i class="mr-3"></i><a href="mailto:witten@stanford.edu" class ="btn btn-outline-primary btn-sidebar" target="_blank" role = "button">Email</a></li>
+				<li class = "sidebar-list-item"><i class="mr-3"></i><a href="http://linkedin.com/in/bwittenbrink/" class ="btn btn-outline-primary btn-sidebar" target="_blank" role = "button">LinkedIn</a></li>
+				<li class = "sidebar-list-item"><i class="mr-3"></i><a href="assets/docs/bw_cv.pdf" class ="btn btn-outline-primary btn-sidebar" target="_blank" role = "button">CV</a></li> 
+			</ul>
+		</div>
+
+
+
+
+		<!-- MAIN BODY -->
+		<div class="page-holder w-100 d-flex flex-wrap">
+			<div class="pageheader">
+				<div class="headercontent">
+					<div class="section-container">
+						<div class="row">
+							<div class="clearfix visible-sm visible-xs"></div>
+							<div class="col-sm-12 col-md-8">
+								<button type="button" id="menu-toggle" class="d-md-none btn-hamburger ham-btn-target">
+									<i class="material-icons md-48 ham-btn-target">menu</i>
+								</button>
+								<h4 class="title">Benjamin Wittenbrink</h4>
+								<p> Welcome! </p>
+								<p> I am a rising senior at Stanford, studying Economics and Mathematics. I am interested in applying a quantitative lens to better understand issues of economic, political, and social importance. </p>
+
+								<p> I am currently a summer analyst on the New York Federal Reserve's <a href="https://www.newyorkfed.org/research/economists/department">Financial Intermediation Research </a> team, and a research assistant for <a href="https://mgduggan.people.stanford.edu"> Mark Duggan </a> and <a href="https://web.stanford.edu/~gopi/"> Gopi Goda</a> at the Stanford Institute for Economic Policy Research. Last year, I spent the summer in Zurich at <a href = "https://www.quantco.com"> QuantCo</a>, a data science startup working at the intersection of econometrics and machine learning. Before that, I worked on a nueroeconomics project with the <a href="https://apexlab.uchicago.edu"> Apex Lab </a> at the University of Chicago and as a research assistant within <a href="https://voices.uchicago.edu/jlist"> John List</a>'s lab. </p>
+							</div>
+
+							<div class="col-sm-8 col-md-4">
+								<div class="biothumb">
+									<img alt="image" src="assets/images/me.jpg" class="img-responsive">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<footer class = "page-footer text-right py-3" style="font-size: 12px; margin-right: 10px">
+		Style inspiration from <a href="https://codyfcook.github.io/">Cody Cook</a>.
+	</div>
+
 </body>
 </html>
