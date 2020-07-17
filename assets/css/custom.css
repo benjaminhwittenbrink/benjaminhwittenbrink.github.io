@@ -231,7 +231,7 @@ html, body {
     line-height:1.5;
     border-radius:0rem;
     background-color:transparent;
-	border-color: transparent;
+    border-color: transparent;
     color:#8c1515;
     font-size: 1em;
     font-family: 'Work Sans', sans-serif;
@@ -239,13 +239,17 @@ html, body {
     text-align: center;
 }
 
+
 .btn-outline-primary:hover{
     color:#8c1515;
     text-decoration: underline;
     background-color:transparent;
     border-color:transparent;
 }
-
+.btn:focus,
+.btn:active {
+box-shadow: none;
+}
 /* Stanford Logo */
 #logo {
     margin-top:2rem;
