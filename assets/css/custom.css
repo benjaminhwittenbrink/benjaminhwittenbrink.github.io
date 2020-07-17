@@ -472,3 +472,9 @@ panel-group .panel {
 .research-accordion.active:after {
   content: '\2796';
 }
+
+
+
+#social-icon {
+  vertical-align: middle;
+}
