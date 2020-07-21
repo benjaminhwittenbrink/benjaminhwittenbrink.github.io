@@ -246,10 +246,7 @@ html, body {
     background-color:transparent;
     border-color:transparent;
 }
-.btn:focus,
-.btn:active {
-box-shadow: none;
-}
+
 /* Stanford Logo */
 #logo {
     margin-top:2rem;
