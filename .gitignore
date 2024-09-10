@@ -1,0 +1,3 @@
+# filter out ds store files 
+.DS_Store
+

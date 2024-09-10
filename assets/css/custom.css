@@ -32,7 +32,7 @@ body {
 }
 
 a, a:hover, a:focus {
-    color:#B1040E;
+    color:#6B1119;
 }
 
 .page-container {
@@ -107,7 +107,7 @@ html, body {
 }
 
 .sidebar-link.active,.sidebar-link:focus{
-    background:#B1040E;
+    background:#6B1119;
     color:#fff !important;
     text-decoration:none
 }
