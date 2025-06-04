@@ -24,13 +24,14 @@ a:hover { text-decoration: underline; }
 /* HEADER */
 .site-header {
   background: #fff;
-  padding: var(--space-md) 0 var(--space-sm);
+  padding: var(--space-md) 5vw var(--space-sm);  /* 5% of viewport on left/right */
   text-align: center;
   border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
 .site-title {
   font-size: 2rem;
   text-transform: uppercase;
@@ -140,3 +141,52 @@ a:hover { text-decoration: underline; }
   color: var(--clr-accent);
   font-weight: 500;
 }
+
+/* Fluid bio content on mobile */
+@media (max-width: 768px) {
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-sm);
+  }
+  .bio-thumb img {
+    width: 60vw;        /* scale image to 60% of viewport width */
+    max-width: 240px;   /* but never exceed original size */
+    height: auto;
+    margin-bottom: var(--space-sm);
+  }
+  .bio-text {
+    width: 90vw;        /* text spans 90% of viewport */
+    max-width: 600px;   
+    margin: 0 auto var(--space-md);
+    text-align: center; /* centers on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  /* add side padding around the whole bio area */
+  .bio-hero {
+    padding: var(--space-lg) 5vw;    /* 5% of viewport width on each side */
+  }
+
+  /* stack and center image, but keep text left-aligned */
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bio-text {
+    width: 100%;                   
+    max-width: none;
+    text-align: left;               /* restore left alignment */
+    padding: 0;                     /* inner padding handled by bio-hero */
+  }
+  .bio-thumb {
+    margin: var(--space-md) 0;      /* vertical gap above/below the image */
+  }
+
+  /* center contacts, with a little side padding */
+  .contact-section {
+    padding: 0 5vw;
+  }
+}
+
